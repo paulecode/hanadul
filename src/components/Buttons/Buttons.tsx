@@ -8,26 +8,6 @@ function NavigationButton({ props }: { props: MenuPoint }) {
 
   const [label, setLabel] = useState(label_simple);
 
-  // const handleHoverStart = () => {
-  //   constructAnimation([...label_split_animation[0]], [...label_split_animation[1]]);
-  // };
-
-  // const handleHoverEnd = () => {
-  //   constructAnimation([...label_split_animation[1]], [...label_split_animation[0]]);
-  // };
-
-  // const constructAnimation = (labelStart: string[], labelEnd: string[]) => {
-  //   const indices = [...Array(labelStart.length).keys()].sort(() => Math.random() - 0.5);
-
-  //   indices.forEach((letter, i) => {
-  //     setTimeout(() => {
-  //       labelStart[letter] = labelEnd[letter];
-  //       const newLabel = labelStart.join('');
-  //       setLabel(newLabel);
-  //     }, i * 20);
-  //   });
-  // };
-
   return (
     <motion.button
       whileHover={{ scale: 1.2, opacity: '75%' }}
