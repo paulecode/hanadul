@@ -1,4 +1,6 @@
-export const mainMenu = {
+import { MenuPoint } from '../screens/Homescreen';
+
+export const mainMenu: Record<string, MenuPoint> = {
   jpn: {
     label_simple: 'Japanese',
     label_split_animation: [
