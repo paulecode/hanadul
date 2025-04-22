@@ -4,14 +4,14 @@ import { mainMenu } from '../data/menus';
 
 export type MenuPoint = {
   label_simple: string;
-  label_split_animation: string[][];
+  label_split_animation: [string[], string[]];
 };
 
 function Homescreen() {
   const menuPoints = mainMenu;
 
   return (
-    <motion.div className="flex flex-col gap-8">
+    <motion.div className="gap-8 grid place-content-center grow">
       {Object.values(menuPoints).map((menuPoint: MenuPoint) => (
         <NavigationButton props={menuPoint} />
       ))}
